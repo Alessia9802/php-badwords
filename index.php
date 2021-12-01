@@ -14,6 +14,15 @@ $paragraph = " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
 echo strlen($paragraph);
 
 
+#Cercare un'elemento in una stringa
+
+$search = strpos($paragraph, 'labore');
+var_dump($search)
+
+
+#Parametro GET
+
+
 ?>
 
 <!DOCTYPE html>
