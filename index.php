@@ -16,7 +16,7 @@ $paragraph = " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
 $word = $_GET['parola'];
 //var_dump($word);
 
-#Parametro GET ------ Da capire
+#Parametro GET
 
 #Sostituire la parola scelta "labore" con tre asterischi
 $secondParagraph = str_replace( $word, "***", $paragraph);
@@ -36,5 +36,6 @@ $secondParagraph = str_replace( $word, "***", $paragraph);
    <p> <?php echo $paragraph ?> </p>
    <p>La lunghezza del paragrafo è di: <?php echo strlen($paragraph) ?> </p>
    <p> <?php echo $secondParagraph ?> </p>
+   <p>La lunghezza del secondo paragrafo è di: <?php echo strlen($secondParagraph) ?> </p>
 </body>
 </html>
