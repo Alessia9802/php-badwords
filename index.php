@@ -11,17 +11,16 @@ $paragraph = " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
 
 #stampo la lunghezza del paragrafo
 
-echo strlen($paragraph);
+//echo strlen($paragraph);
 
+$word = $_GET['parola'];
+//var_dump($word);
 
-#Cercare un'elemento in una stringa
+#Parametro GET ------ Da capire
 
-$search = strpos($paragraph, 'labore');
-var_dump($search)
-
-
-#Parametro GET
-
+#Sostituire la parola scelta "labore" con tre asterischi
+$secondParagraph = str_replace( $word, "***", $paragraph);
+//echo $secondParagraph;
 
 ?>
 
@@ -35,5 +34,7 @@ var_dump($search)
 </head>
 <body>
    <p> <?php echo $paragraph ?> </p>
+   <p>La lunghezza del paragrafo è di: <?php echo strlen($paragraph) ?> </p>
+   <p> <?php echo $secondParagraph ?> </p>
 </body>
 </html>
